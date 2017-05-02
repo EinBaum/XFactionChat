@@ -1,2 +1,5 @@
 # XFactionChat
-WoW 1.12.1 AddOn: Cross Faction Chat
+
+- Both players need to have this AddOn
+- Chat command: /x your message
+- Illegal on most servers including retail

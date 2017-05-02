@@ -1,0 +1,10 @@
+## Interface: 11200
+## Title: XFaction|cffa050ffChat|r
+## Author: EinBaum https://github.com/EinBaum
+## Version: 1.0
+## Notes: Cross Faction Chat. Command: /x
+## Dependencies:
+## OptionalDeps:
+## SavedVariablesPerCharacter: 
+## SavedVariables:
+XFactionChat.lua
