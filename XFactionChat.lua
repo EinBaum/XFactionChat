@@ -1,4 +1,5 @@
 
+
 local a_1 = " !\"#$%&'()*+,-./"
 local a_2 = "0123456789"
 local a_3 = ":;<=>?@"
@@ -105,13 +106,15 @@ end
 
 local function table_perms(dict)
 	local out = {}
+	local i = 1
 	for _, entry in dict do
 		local input  = entry[1]
 		local output = entry[2]
 		local input_perms  = string_perms(input)
 		local output_perms = string_perms(output)
 		for k, _ in input_perms do
-			table.insert(out, {input_perms[k], output_perms[k]})
+			out[i] = {input_perms[k], output_perms[k]}
+			i = i + 1
 		end
 	end
 	return out
@@ -233,7 +236,6 @@ frame:SetScript("OnEvent", function()
 	local msg		= arg1
 	local author	= arg2
 	local lang		= arg3
-
 	if author ~= p_name then
 		if lang == p_lang_foreign then
 			local dmsg = decrypt(msg, p_from, signature)
